@@ -1,0 +1,31 @@
+.status-bar{
+    display: flex;
+    justify-content: center; /* css Hack, push it all divs at center*/
+    padding: 5px 3px;   /*to give space  */
+}
+
+.status-bar__column:first-child span{
+   margin-right: 5px; 
+}
+
+.status-bar__column{
+    width: 33%;
+}
+/* css Hack, and give div width 33% samely */
+
+.status-bar__column:nth-child(2){
+    display:flex;
+    justify-content: center;
+ }
+ /* css Hack, and chose matching class
+ then give flex and place it center*/
+
+ .status-bar__column:last-child{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+ }
+
+ .status-bar__column .fa-battery-full{
+    margin: 0px 5px;
+ }

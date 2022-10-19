@@ -8,38 +8,27 @@ name : tags
 /* From google font, check options, 
 copy @import setting part, and pastes in css top 
 after copy font-family options to use, and paste it*/
+@import "reset.css";    /*import reset.css to styles.css, 
+so don't have to make more link at html */
+@import "status-bar.css";
 
 body{
     font-family: "Open Sans", sans-serif;
 }
 
-.status-bar{
+.welcome-header{
+    margin:90px 0px;
+    text-align: center;
     display: flex;
-    justify-content: center; /* css Hack, push it all divs at center*/
-}
-
-.status-bar__column:first-child span{
-   margin-right: 5px; 
-}
-
-.status-bar__column{
-    width: 33%;
-}
-/* css Hack, and give div width 33% samely */
-
-.status-bar__column:nth-child(2){
-    display:flex;
-    justify-content: center;
- }
- /* css Hack, and chose matching class
- then give flex and place it center*/
-
- .status-bar__column:last-child{
-    display:flex;
-    justify-content: flex-end;
+    flex-direction: column;
     align-items: center;
- }
-
- .status-bar__column .fa-battery-full{
-    margin: 0px 5px;
- }
+    font-weight: 600;
+}
+.welcome-header__title{
+    margin-bottom: 20px;
+    font-size:25px;
+}
+.welcome-header__text{
+    width:60%;
+    opacity: 0.7;
+}
