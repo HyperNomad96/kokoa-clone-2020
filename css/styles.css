@@ -11,6 +11,7 @@ after copy font-family options to use, and paste it*/
 @import "reset.css";    /*import reset.css to styles.css, 
 so don't have to make more link at html */
 @import "status-bar.css";
+@import "variables.css";
 
 body{
     font-family: "Open Sans", sans-serif;
@@ -31,4 +32,25 @@ body{
 .welcome-header__text{
     width:60%;
     opacity: 0.7;
+}
+
+#login-form{
+    display: flex;  /*make a block options*/
+    flex-direction: column; /*setting coloum direction*/
+    margin: 0px 30px;
+}
+#login-form input { /*set options input */
+    border: none;
+    padding:15px 0px;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin-bottom: 25px;
+    transition: border-color .3s ease-in-out;   /*give animation opitons*/
+}
+#login-form input::placeholder{     /*set placeholder*/
+    color:rgba(0,0,0,0.4)
+}
+
+#login-form input:focus{    /*set focus*/
+    border-color: var(--yellow);
 }
