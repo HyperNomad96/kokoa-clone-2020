@@ -43,14 +43,31 @@ body{
     border: none;
     padding:15px 0px;
     font-size: 18px;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
     margin-bottom: 25px;
-    transition: border-color .3s ease-in-out;   /*give animation opitons*/
 }
+#login-form input:not([type="submit"]){ /*attribute selector */
+    /*input is not type="submit" then give options*/
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+        transition: border-color .3s ease-in-out;            /*give animation opitons*/
+}
+
 #login-form input::placeholder{     /*set placeholder*/
     color:rgba(0,0,0,0.4)
 }
 
 #login-form input:focus{    /*set focus*/
     border-color: var(--yellow);
+}
+
+#login-form input[type="submit"] {
+    cursor: pointer;
+    background-color: var(--yellow);/* give a color options*/
+    padding: 20px 0px;
+    border-radius: 5px; /*make a round*/
+}
+
+#login-form a {
+    text-align: center;
+    text-decoration: none;  /*remove hyperlink deco options*/
+    color:inherit;/*inheritance from father*/
 }
