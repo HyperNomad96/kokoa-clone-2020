@@ -10,64 +10,11 @@ copy @import setting part, and pastes in css top
 after copy font-family options to use, and paste it*/
 @import "reset.css";    /*import reset.css to styles.css, 
 so don't have to make more link at html */
-@import "status-bar.css";
 @import "variables.css";
-
+/*Compoents*/
+@import "components/status-bar.css";    /*make a directory then define path*/
+/*Screens*/
+@import "screens/login.css";
 body{
     font-family: "Open Sans", sans-serif;
-}
-
-.welcome-header{
-    margin:90px 0px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: 600;
-}
-.welcome-header__title{
-    margin-bottom: 20px;
-    font-size:25px;
-}
-.welcome-header__text{
-    width:60%;
-    opacity: 0.7;
-}
-
-#login-form{
-    display: flex;  /*make a block options*/
-    flex-direction: column; /*setting coloum direction*/
-    margin: 0px 30px;
-}
-#login-form input { /*set options input */
-    border: none;
-    padding:15px 0px;
-    font-size: 18px;
-    margin-bottom: 25px;
-}
-#login-form input:not([type="submit"]){ /*attribute selector */
-    /*input is not type="submit" then give options*/
-        border-bottom: 1px solid rgba(0,0,0,0.2);
-        transition: border-color .3s ease-in-out;            /*give animation opitons*/
-}
-
-#login-form input::placeholder{     /*set placeholder*/
-    color:rgba(0,0,0,0.4)
-}
-
-#login-form input:focus{    /*set focus*/
-    border-color: var(--yellow);
-}
-
-#login-form input[type="submit"] {
-    cursor: pointer;
-    background-color: var(--yellow);/* give a color options*/
-    padding: 20px 0px;
-    border-radius: 5px; /*make a round*/
-}
-
-#login-form a {
-    text-align: center;
-    text-decoration: none;  /*remove hyperlink deco options*/
-    color:inherit;/*inheritance from father*/
 }

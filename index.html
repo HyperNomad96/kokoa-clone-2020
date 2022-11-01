@@ -28,9 +28,12 @@
         <p class="welcome-header__text">If you have a Kokoa Account, log in with your email or phone number.</p>
     </header>
 
-    <form id="login-form">
-        <input type="text" placeholder="Email or Phone number"/>
-        <input type="text" placeholder="Password"/>
+    <form action="friends.html" method="get" id="login-form">  
+        <!--At the From , in attribute ,action can send data another place-->
+        <!--method has two way , post :send information on the server at background  
+            and get: insecure so becareful to use security-->
+        <input name="username" type="text" placeholder="Email or Phone number"/>
+        <input name="password" type="text" placeholder="Password"/>
         <input type="submit" value="Log In"/>
         <input type="submit" value="Sign Up"/>
         <a href="#">Find Kokoa Account or Password</a>
