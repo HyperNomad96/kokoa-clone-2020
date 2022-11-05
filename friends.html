@@ -1,1 +1,43 @@
-Hello this is friends
+<!DOCTYPE html>     <!--!+Enter : HTML inital settings shortcut-->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">    <!--link:css : css shortcut but fix path-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends - Kokoa Clone</title>
+</head>
+<body>
+    <div class="status-bar">        <!--Follw the BEM(Block Element modifier) programmer usally use class -->
+        <div class="status-bar__column">
+            <span>No Servie</span>
+            <i class="fa-sharp fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>110%</span>
+            <i class="fa-solid fa-battery-full fa-lg"></i>
+            <i class="fa-solid fa-bolt-lightning"></i>
+        </div>
+    </div>
+
+    <nav class="nav">   <!--VSC Short Cut : nav>ul>li*4>a -->
+        <ul class="nav__list">
+            <li class="nav__btn"><a class ="nav__link a" href="#"><i class="fa-solid fa-user fa-lg"></i></a></li>
+            <li class="nav_btn"><a class ="nav__link a" href="#"><i class="fa-regular fa-comment fa-lg"></i></a></li>
+            <li class="nav_btn"><a class ="nav__link a" href="#"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a></li>
+            <li class="nav_btn"><a class ="nav__link a" href="#"><i class="fa-solid fa-ellipsis fa-lg"></i></a></li>
+        </ul>
+    </nav>
+
+
+    <script src="https://kit.fontawesome.com/106717b492.js" crossorigin="anonymous"></script>
+    <!--FontAwesome, personal kit code must placed close to last body tag -->
+    <!--FontAwesome, search icon and copy matching image from codes-->
+    <!--FontAwesome, fa-(n)x, such as 2,3,4,5 will change size of icons-->
+    <!--FontAwesome, fa-lg, will change size bigger-->
+    <!--Heroicons, just copy and paste it-->
+</body>
+</html>

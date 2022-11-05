@@ -13,6 +13,9 @@ so don't have to make more link at html */
 @import "variables.css";
 /*Compoents*/
 @import "components/status-bar.css";    /*make a directory then define path*/
+
+@import "components/nav-bar.css";
+
 /*Screens*/
 @import "screens/login.css";
 body{
