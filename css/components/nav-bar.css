@@ -6,6 +6,8 @@
     bottom:0;           /*where to place it*/
     width: 100%;/*it might seperate from previous options,so give again width*/
     box-sizing: border-box; /*difference of padding size define again*/
+    /*default at css, if box had a size but give a padding size then box increase size.*/
+    /*so to tell css, don't want to modify box-size*/
 }
 
 .nav__list{
