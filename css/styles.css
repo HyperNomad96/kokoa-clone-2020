@@ -20,4 +20,5 @@ so don't have to make more link at html */
 @import "screens/login.css";
 body{
     font-family: "Open Sans", sans-serif;
+    height: 1000vh;
 }

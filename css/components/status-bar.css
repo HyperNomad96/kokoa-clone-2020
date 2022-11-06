@@ -2,6 +2,9 @@
     display: flex;
     justify-content: center; /* css Hack, push it all divs at center*/
     padding: 5px 3px;   /*to give space  */
+    position: fixed; /*to fix it */
+    top:0;  /*where to place it*/
+    width: 100%;  /*resize width*/
 }
 
 .status-bar__column:first-child span{
