@@ -15,6 +15,34 @@
     justify-content: space-between;
 }
 
-.nav_list{
+.nav__link{
+    position: relative;
     color :#2e363e;
+}
+
+.nav__notification{
+    background-color: tomato;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;    /*to make a circle, give half of size*/
+    display:block;  /*span doesn't have a width*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-weight: 600;
+    position:absolute;  /* : moves itself from closest relative parents.*/
+    left:15px;
+    bottom:15px;
+}
+
+.nav__additonal{
+    background-color: tomato;
+    display: flex;  /*remove span's inline options*/
+    width: 8px;
+    height: 8px;
+    border-radius: 4px; /*to make a circle, set half of value */
+    position: absolute; /*from near relative parents moves it*/
+    right:-5px;
+    top:-15px;
 }
