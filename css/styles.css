@@ -16,6 +16,7 @@ so don't have to make more link at html */
 
 @import "components/nav-bar.css";
 
+@import "components/screen-header.css";
 /*Screens*/
 @import "screens/login.css";
 body{
